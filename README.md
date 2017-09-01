@@ -5,6 +5,7 @@ Can also be used to add other plugins to boot (EFS, CIFS, NFSv4).
 
 ## result after reboot
 ```shell
+ps -a | grep docker-volume-netshare
 PID root       0:00 /usr/bin/docker-volume-netshare nfs -v 3
 ```
 
