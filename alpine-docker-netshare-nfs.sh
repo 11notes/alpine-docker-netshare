@@ -10,8 +10,7 @@ rc-update add netmount
 update-ca-certificates
 
 # download docker-volume-netshare plugin and add to system startup
-wget -O /usr/bin/docker-volume-netshare \
-    https://github.com/ContainX/docker-volume-netshare/releases/download/v0.34/docker-volume-netshare_0.34_linux_amd64-bin \
+wget -O /usr/bin/docker-volume-netshare https://github.com/ContainX/docker-volume-netshare/releases/download/v0.34/docker-volume-netshare_0.34_linux_amd64-bin \
     && chmod +x /usr/bin/docker-volume-netshare
 
 # create OpenRC upstart script, set nfs version 3, and add to default
